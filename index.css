@@ -1,0 +1,759 @@
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro";
+    src: url("./fonts/akzidenzgroteskpro_lightex.ttf")
+}
+
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro boldex";
+    src: url("./fonts/akzidenzgroteskpro_boldex.otf")
+}
+
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro title";
+    src: url("./fonts/akzidenzgroteskpro_medextit.ttf")
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro title1";
+    src: url("./fonts/akzidenzgroteskpro_mdex.ttf")
+}
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro bold";
+    src: url("./fonts/akzidenzgroteskpro_bold.ttf")
+}
+
+/* RESET CSS ##################################### */
+* {
+    margin: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+/* 
+#################################  MAIN CSS  #################################
+*/
+
+body {
+    font-family: 'Akzidenz-Grotesk Pro';
+    overflow-x: hidden
+}
+
+.container {
+    padding: 0px calc(50vw - 650px);
+    width: 1300px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 146px;
+}
+
+.logo, .logoFooter {
+    width: 171px;
+}
+
+header button {
+    margin: -31px 24px 0 3px;
+    background-color: inherit;
+    border: none;
+    font-family: 'Akzidenz-Grotesk Pro';
+    font-size: 14.4px;
+}
+
+.number {
+    font-family: 'Akzidenz-Grotesk Pro boldex';
+    padding: 0 0 0 25px;
+    margin: -31px 0 0 0;
+    font-size: 17.6;
+}
+
+.mainTitle {
+    display: flex;
+    width: 1050px;
+    padding: 0 150px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.title {
+    font-family: 'Akzidenz-Grotesk Pro title';
+    font-style: italic;
+    font-size: 56px;
+    color: #232A3B;
+}
+
+.subTitle {
+    font-size: 17.6px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.titleDesc {
+    font-family: 'Akzidenz-Grotesk Pro title';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40.8px;
+    padding-top: 35px;
+    color: #232A3B;
+}
+
+.getFreeCon {
+    font-family: 'Akzidenz-Grotesk Pro bold';
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.6px;
+    margin: 76px 0 0 0;
+    padding: 11px 9px;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.rightTitle {
+    padding: 5px 0 0 0px;
+}
+
+.mainImg {
+    width: 293px;
+}
+
+.mainImgDesc {
+    font-size: 14.4px;
+    text-align: right;
+    padding: 16px 0px 0 0;
+    margin-left: -40px;
+    width: 110%;
+}
+
+.ourPrincipesTitle {
+    padding: 20px 0 0 12px;
+}
+
+.bigTitle {
+    font-family: 'Akzidenz-Grotesk Pro title';
+    font-size: 28px;
+    color: #142431;
+}
+
+.bigTitle::before {
+    display: inline-block;
+    font-size: 40px;
+    content: '_____';
+    margin: -1px 15px 5px 30px;
+    overflow: hidden
+}
+
+.ourPrincipes {
+    display: flex;
+    margin-top: 4px;
+}
+
+.bigNum {
+    font-family: 'Akzidenz-Grotesk Pro title';
+    font-size: 255px;
+    color: white;
+    -webkit-text-stroke: 8px black;
+    opacity: 0.05;
+    margin-top: 18px;
+}
+
+.bigNum1 {
+    margin-left: 10px
+}
+
+.pr {
+    display: flex;
+    width: 100%
+}
+
+.prMainTxt {
+    padding: 70px 0 0 0;
+    margin-left: -43px;
+    padding-right: 25px;
+    width: 200%;
+    font-size: 12.8px;
+}
+
+.prMainTxt b,
+.fromUs,
+.fromYou,
+.simpleTitle {
+    font-family: 'Akzidenz-Grotesk Pro title';
+    font-weight: 500;
+    font-size: 20px;
+    color: #232A3B;
+    display: block
+}
+
+.prMainTxt b {
+    margin-bottom: 15px;
+}
+
+.pr2 .prMainTxt {
+    margin-left: -11px
+}
+
+.pr2 .prMainTxt b {
+    margin-bottom: 6px;
+}
+
+.pr2 .prMainTxt span {
+    display: block;
+    width: 85%
+}
+
+.bigNum3 {
+    margin-left: -20px
+}
+
+.pr3 .prMainTxt {
+    margin-left: -2px
+}
+
+.pr3 .prMainTxt b {
+    margin-bottom: 30px
+}
+
+.pr3 .prMainTxt span {
+    display: block;
+    width: 90%
+}
+
+.weKnowsTitle {
+    margin: -8px 0 0 12px
+}
+
+.weKnowsTitle span {
+    padding-left: 145px
+}
+
+.fromUsDiv,
+.fromYouDiv,
+.partners {
+    width: 1000px;
+    padding: 0 156px;
+    font-size: 12.8px
+}
+
+.partners {
+    padding: 0 86px;
+}
+
+.fromUs {
+    padding: 26px 0 8px 0;
+}
+
+.fromYou {
+    padding: 30px 0 8px 0
+}
+
+.partnersTitle {
+    padding: 34px 0 0 70px;
+}
+
+.partnersFlexImgs {
+    display: flex;
+
+    margin-top: 8px;
+}
+
+.partnersFlexImgs img {
+    object-fit: contain;
+    display: block;
+    padding-right: 41px;
+
+}
+
+.partner1 {
+    width: 140.8px
+}
+
+.partner2 {
+    width: 183.2px;
+
+}
+
+.partner3 {
+
+    padding-left: 39.5px;
+    width: 128px;
+}
+
+.partner4 {
+    padding: 8px 0 0 39.5px;
+    width: 149.6px;
+}
+
+.partner5 {
+    width: 273.6px;
+    padding-left: 39px;
+}
+
+.feedbackTitle {
+    margin-top: 16px;
+    padding-left: 157px;
+    padding-bottom: 7.5px;
+}
+
+.feedback {
+    display: flex;
+    width: 1145px;
+    padding: 0 83px;
+    font-family: 'Open Sans';
+    font-size: 11.2px
+}
+.comment {
+    /* Rectangle 76 */
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px 5px 0 5px;
+    width: 360px;
+    height: 179px;
+    margin: 0 22.4px 0 0;
+}
+.userIcon {
+    display: block;
+    float: left;
+    width: 29.6px;
+    background-color: #d9d9d9;
+    padding: 5px 5px;
+    border-radius: 12px;
+    margin: 9.5px 15px 5px 11px;
+    box-shadow: none;;
+}
+.userInfo p {
+    display: inline;
+}
+.userInfo {
+    display: block;
+    margin: 11px;
+}
+.username {
+    margin: 0 14px 0 -4px;
+}
+.julia {
+    margin-right: 27px;
+}
+.ilya {
+    margin: 0px 28px 0 -2px;
+}
+.starIcon {
+    display:inline-block;
+    width: 120px;
+    transform: scale(1.8);
+    color: red;
+    padding: 2px 0px 0 31px;
+    letter-spacing: 1;
+}
+.grayStar {
+    /* Star 140 */
+    color: #d9d9d9;
+}
+.userTxt {
+    padding: 6px 10px 0px 10px;
+    font-size: 11.2px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+line-height: 150%;
+/* or 21px */
+
+color: #000000;
+
+
+}
+.rateDiv {
+    display: flex;
+    position: relative;
+    left: 7px;
+}
+
+.like, .dislike {
+    width: 8%;
+    transform: scale(0.8);
+}
+.dislike {
+    transform: rotate(180deg) scale(0.8)
+}
+.like1 {
+    top: 54px
+}
+.likeC {
+    margin: 9px 5px 0 4px;
+}
+.disC {
+    margin: 9px 0 0 0;
+}
+.like2 {
+    top: 3px
+}
+.like3 {
+    top: 17px;
+}
+/*               ----------------------                  */
+/* ---------------------PRODUCTS---------------------    */
+/*               ----------------------                  */
+.productsTitle {
+    padding: 37px 0 0 11px;
+}
+.products {
+    display: flex;
+
+}
+.product1, .product4 {
+    height: 200px;
+    padding-bottom: 32px
+}
+.product4 {
+    padding-bottom: 57.6px
+}
+.productBox {
+    margin: 90px 271px 0 37px;
+    width: 250px;
+}
+.center {
+    text-align: center;
+    padding: 74px 7px;
+    border: 1px solid black;
+    border-radius: 60%;
+    width: 184px;
+    font-family: "Akzidenz-Grotesk Pro title1";
+}
+.product3 {
+    margin-top: 122px
+}
+
+.tooBigCenter {
+    padding: 62px 7px;
+}
+.degreeText {
+    font-size: 12.8px;
+    position: relative;
+    
+}
+.degreeText::before {
+    display: block;
+    position: relative;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    content: '';
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.a20 {
+    top: -233px;
+    left: 148px
+}
+.a20::before { 
+    top: 40px;
+    left: -12px;
+}
+.a40 {
+    top: -225px;
+    left: 187px
+}
+.a40::before, .a60::before, .a80::before, .b40::before, .b60::before {
+    left: -10px;
+    top: 22px;
+}
+.a60 {
+    top: -208px;
+    left: 205px
+}
+.a80 {
+    top: -182px;
+    left: 203px
+}
+.b40 {
+    top: -185px;
+    left: 187px
+}
+.b60 {
+    top: -169px;
+    left: 205px
+}
+.c0 {
+    top: -228px;
+    left: 79px;
+}
+.c0::before {
+    top: 25px;
+    left: 17px 
+}
+.d20 {
+    left: -104px;
+    top: -218px;
+}
+.d20::before {
+    left: 159px;
+    top: 22.5px
+}
+.d40 {
+    left: -42px;
+    top: -210px
+}
+.d40::before {
+    left: 60.5px;
+    top: 22.5px
+}
+.d60 {
+    left: -101px;
+    top: -193px
+}
+.d60::before {
+    top: 22.5px;
+    left: 102px
+}
+.e20 {
+    left: -18px;
+    top: -216px;
+}
+.e20::before {
+    left: 73px;
+    top: 22px
+}
+.e40 {
+    left: -61px;
+    top: -208px
+}
+.e40::before {
+    left: 80px;
+    top: 22px
+}
+.e60 {
+    left: -133px;
+    top: -191.5px
+}
+.e60::before {
+    left: 134px;
+    top: 23px;
+}
+.conditionsTitle {
+    margin: -56px 0 32px 12px;
+}
+.conditionsFlex {
+    display: flex
+}
+.conditionsFlex .condition  img {
+    transform: scale(0.8)
+} 
+.condition {
+    margin: 0 92px 0 80px
+}
+.condition2 {
+    margin: -5px 80px 0 80px;
+}
+.condition3 {
+    margin: 0 110px 0 80px
+}
+.conditionsP {
+    display: flex;
+}
+.conditionsP p {
+    margin: 0 18px 0 55px
+}
+.QATitle {
+    padding: 36px 0 0 12px
+}
+.qTxt {
+    font-size: 16px
+}
+.QA {
+    margin: 54.5px 0 0 156px;
+    width: 705px;
+}
+.QADiv1 {
+    padding: 27px 0 25px 2px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.QADiv2 {
+    padding: 25px 0 25px 2px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.ans2 {
+    font-size: 12.8px;
+    padding: 17px 0 0 0
+}
+.fa-angle-right, .fa-angle-left {
+    margin: 0 0 0 58px;
+    transform: rotate(90deg) scale(2)
+}
+.fa-angle-left {
+    margin: 0 0 0 180px;
+}
+.applicationTitle {
+    margin: 37px 0 0 12px
+}
+.manager {
+    font-family: 'Akzidenz-Grotesk Pro title1';
+    font-size: 19.2px;
+    font-weight:500;
+}
+.applicationFlex {
+    display: flex;
+    width: 1100px;
+    margin: 58.7px 0 0 63px;
+}
+.appLeft {
+    font-size: 14.4px
+}
+.email {
+    margin: 62px 0 0 0;
+    display: block;
+}
+.numberApp {
+    display: block;
+    margin: 28px 0 0 0
+}
+.address {
+    display: block;
+    margin: 24px 0 0 0
+}
+.email::before, .numberApp::before, .address::before {
+    content: ' ';
+    display: inline-block;
+    margin: 0px 16px -9px 0px;
+
+    background: no-repeat 0% / 28px 28px;
+    width: 28px;
+    height: 28px;
+}
+.email::before {
+    background-image:url('./imgs/email.png') ;
+}
+.numberApp::before {
+    background-image: url('./imgs/phone.png');
+    margin:-3px 16.5px -4px 0
+}
+.address::before {
+    background-image: url('./imgs/location.png');
+    margin:-3px 16.5px -4px 0
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.citiesTitle {
+    font-family: 'Akzidenz-Grotesk Pro title1';
+    margin-top: 60px;
+}
+.cities {
+    margin-bottom: 180px
+}
+input {
+    font-family: 'Akzidenz-Grotesk Pro title1';
+    width: 550px;
+    padding-left: 20px;
+    height: 42px;
+    display: block;
+    border-radius: 0;
+    margin-bottom:20px
+}
+.feedbackApp {
+    font-family: 'Akzidenz-Grotesk Pro bold';
+    display: block;
+    margin: 25px 0 0 0;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14.4px;
+    width: 572.8px;
+    height: 44px
+}
+.form {
+    margin: -3px 0 0 0px
+}
+.typeMessage {
+    padding-bottom: 107px
+}
+.logoFooter {
+    margin: -47px 29px 0 17px
+}
+footer button {
+    margin-top: 3px;
+    margin-right: 22.5px;
+    border: none;
+    font-size: 14.4px
+}
+.numbers {
+    display: flex;
+    margin: -43px 0 0 464px;
+    font-size: 14.4px;
+    font-family: 'Akzidenz-Grotesk Pro bold'
+}
+.numbers p {
+    margin-right: 50px
+}
+.waIcon {
+    margin: -2.5px 0 0 0
+}
+.fa-telegram {
+    color: rgb(38, 156, 215);
+    transform: scale(2.35);
+    margin: 0 28px 0 0;
+}
+.fa-whatsapp {
+    color: rgb(34, 166, 22);
+    transform: scale(2.3);
+    margin: 3px 28px 0 -5px;
+}
+.dev {
+    font-size: 20px;
+    margin: 49px 0 50px 488px;
+    padding-bottom: 50px
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #d9d9d9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 300px
+}
+.dev b {
+    font-family: 'Akzidenz-Grotesk Pro title1'
+
+}
